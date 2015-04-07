@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C19B4C91AD427B200DD417D /* imageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C19B4C81AD427B200DD417D /* imageCell.m */; };
 		7C58F47D1AD30ED700D4D07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C58F47C1AD30ED700D4D07D /* main.m */; };
 		7C58F4801AD30ED700D4D07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C58F47F1AD30ED700D4D07D /* AppDelegate.m */; };
 		7C58F4831AD30ED700D4D07D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C58F4821AD30ED700D4D07D /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C19B4C71AD427B200DD417D /* imageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCell.h; sourceTree = "<group>"; };
+		7C19B4C81AD427B200DD417D /* imageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCell.m; sourceTree = "<group>"; };
 		7C58F4771AD30ED700D4D07D /* lessonThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lessonThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C58F47B1AD30ED700D4D07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C58F47C1AD30ED700D4D07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				7C58F4811AD30ED700D4D07D /* ViewController.h */,
 				7C58F4821AD30ED700D4D07D /* ViewController.m */,
 				7C58F4841AD30ED700D4D07D /* Main.storyboard */,
+				7C19B4C71AD427B200DD417D /* imageCell.h */,
+				7C19B4C81AD427B200DD417D /* imageCell.m */,
 				7C58F4871AD30ED700D4D07D /* Images.xcassets */,
 				7C58F4891AD30ED700D4D07D /* LaunchScreen.xib */,
 				7C58F47A1AD30ED700D4D07D /* Supporting Files */,
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C58F4831AD30ED700D4D07D /* ViewController.m in Sources */,
+				7C19B4C91AD427B200DD417D /* imageCell.m in Sources */,
 				7C58F4801AD30ED700D4D07D /* AppDelegate.m in Sources */,
 				7C58F47D1AD30ED700D4D07D /* main.m in Sources */,
 			);
@@ -417,6 +423,7 @@
 				7C58F49C1AD30ED700D4D07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C58F49D1AD30ED700D4D07D /* Build configuration list for PBXNativeTarget "lessonThreeTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +432,7 @@
 				7C58F49F1AD30ED700D4D07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Sergey Yasnetsky. All rights reserved.
 //
 #import "ViewController.h"
+#import "imageCell.h"
+
 
 @interface ViewController ()
 
@@ -26,7 +28,7 @@
     NSString * stringValues = @"cola,pepsi,wisky,boorbon,b52";
     NSString * stringPrices = @"100,120,300,400,600";
     NSString * stringFortres = @"0,0,40,38,20";
-    NSString * stringDescription = @"drink coke,бери от жизни все,два по 50,ален делон пьет двойной бурбон,даже и не думай"; // эту строку консоль показывает как число
+    NSString * stringDescription = @"drink coke напитки компании кокакола производятся в америке как поило для идиотовв,бери от жизни все а когда нечего брать бери пепси,два по 50 лучший варинат для соблазнения ,ален делон не пьет адеколон он пьет двойной бурбон,даже и не думай брать эту гадость"; // эту строку консоль показывает как число
     
     
     self.arrayM = [NSMutableArray array];
@@ -65,16 +67,34 @@
     return self.arrayPrices.count;
 }
 
+//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *simpleTableIdentifier = @"Cell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+//    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: simpleTableIdentifier];
+//    }
+//    cell.textLabel.text = [self.arrayValues objectAtIndex:indexPath.row];
+//    cell.detailTextLabel.text = [self.arrayPrices objectAtIndex: indexPath.row];
+//    
+//    return cell;
+//    
+//}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *simpleTableIdentifier = @"imageCell";
+    
+    imageCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: simpleTableIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier: simpleTableIdentifier];
     }
-    cell.textLabel.text = [self.arrayValues objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = [self.arrayPrices objectAtIndex: indexPath.row];
+    cell.valueLabel.text = [self.arrayValues objectAtIndex:indexPath.row];
+    cell.pricesLabel.text = [self.arrayPrices objectAtIndex: indexPath.row];
+     cell.fortresLabel.text = [self.arrayFortres objectAtIndex: indexPath.row];
+     cell.descriptionLabel.text = [self.arrayDescription objectAtIndex: indexPath.row];
     
     return cell;
     

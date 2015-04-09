@@ -10,5 +10,8 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+{
+    NSArray *_data;
+}
 
 @end
